@@ -47,13 +47,13 @@ $(document).ready(function() {
 			else { 
 			$('.numJobs').append('<h3>Total Jobs ' + data["TotalJobs"] + '</h3>')
 			 for(var currentObj in data['JobData'] ) {
-				var htmlRe = 'Job Title: <em><strong>' + data["JobData"][currentObj]["JobTitle"] + '</strong></em><br>';
-				htmlRe = htmlRe + 'Organization name: ' + data["JobData"][currentObj]["OrganizationName"] + '<br>';
-				htmlRe = htmlRe + 'salary: ' + data["JobData"][currentObj]["SalaryMin"] + ' - ' + data["JobData"][currentObj]["SalaryMax"] + '<br>' 
-				htmlRe = htmlRe + 'Start Date: ' + data["JobData"][currentObj]["StartDate"] + '<br>';
-				htmlRe = htmlRe + 'Work Schedule: ' + data["JobData"][currentObj]["WorkSchedule"] + '<br>';
-				htmlRe = htmlRe + 'Locations: ' + data["JobData"][currentObj]["Locations"] + '<br>';
-				htmlRe = htmlRe + 'Job Summary: ' + data["JobData"][currentObj]["JobSummary"] + '<br>';
+				var htmlRe = '<strong>Job Title:</strong> <em style="text-decoration: underline">' + data["JobData"][currentObj]["JobTitle"] + '</em><br>';
+				htmlRe = htmlRe + '<strong>Organization name:</strong> ' + data["JobData"][currentObj]["OrganizationName"] + '<br>';
+				htmlRe = htmlRe + '<strong>salary:</strong> ' + data["JobData"][currentObj]["SalaryMin"] + ' - ' + data["JobData"][currentObj]["SalaryMax"] + '<br>' 
+				htmlRe = htmlRe + '<strong>Start Date:</strong> ' + data["JobData"][currentObj]["StartDate"] + '<br>';
+				htmlRe = htmlRe + '<strong>Work Schedule:</strong> ' + data["JobData"][currentObj]["WorkSchedule"] + '<br>';
+				htmlRe = htmlRe + '<strong>Locations:</strong>' + data["JobData"][currentObj]["Locations"] + '<br>';
+				htmlRe = htmlRe + '<strong>Job Summary:</strong> ' + data["JobData"][currentObj]["JobSummary"] + '<br>';
 				htmlRe = htmlRe + '<a href=' + data["JobData"][currentObj]["ApplyOnlineURL"] + ' target="_blank">Apply online' + '</a>' + '<br>';
 				$('.content').append('<div class="contentObj">' + htmlRe + '</div>')
 			} 
