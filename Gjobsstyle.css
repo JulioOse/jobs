@@ -1,0 +1,40 @@
+body {
+	background-color: #e68a00;
+}
+
+.header {
+	background-color: #b86e00;
+	text-align: center;
+}
+
+.contentObj {
+	/*width: 500px;
+	height: 500px; */
+	margin-bottom: 10px;
+	background-color: #ff9900;
+	border: 1px solid black;
+}
+form {
+	text-align: center;
+}
+input {
+	width: 200px;
+	height: 30px;
+}
+
+.searchB {
+	text-align: center;
+	border: 1px solid black;
+	width: 150px;
+	margin-left: 44%;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	background-color: orange;
+	
+}
+
+@media (max-width: 600px){
+	.searchB {
+		margin-left: 22%;
+	}
+}
