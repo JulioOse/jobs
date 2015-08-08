@@ -26,15 +26,9 @@ input {
 	text-align: center;
 	border: 1px solid black;
 	width: 150px;
-	margin-left: 44%;
+	margin: 0 auto;
 	margin-bottom: 15px;
 	margin-top: 15px;
 	background-color: orange;
 	
-}
-
-@media (max-width: 600px){
-	.searchB {
-		margin-left: 22%;
-	}
 }
